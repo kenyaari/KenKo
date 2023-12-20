@@ -139,7 +139,7 @@ public class addFoodsActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please enter a valid food and quantity.", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    String baseUrl = "https://api.edamam.com/api/food-database/v2/parser?app_id=8df70d70&app_key=787e102e6eb88078100b13aab9479c1c&ingr=";
+                    String baseUrl = "https://api.edamam.com/api/food-database/v2/parser?app_id=///&app_key=///&ingr="; //Deleted ID and API key
                     String footerUrl = "&nutrition-type=logging&category=generic-foods&category=generic-meals&category=packaged-foods&category=fast-foods";
                     String userUrl = foodText.getText().toString().replaceAll(" ", "%20");
                     String url = baseUrl+userUrl+footerUrl;
@@ -361,7 +361,7 @@ public class addFoodsActivity extends AppCompatActivity {
         }
         String newBarcodeData = sp.getString("barcodeData", "not_exists");
         if (newBarcodeData.equals("exists")) {
-            String baseUrl = "https://api.edamam.com/api/food-database/v2/parser?app_id=8df70d70&app_key=787e102e6eb88078100b13aab9479c1c&upc=";
+            String baseUrl = "https://api.edamam.com/api/food-database/v2/parser?app_id=///&app_key=///&upc="; //Deleted ID and API key
             String footerUrl = "&nutrition-type=logging&category=generic-foods&category=generic-meals&category=packaged-foods&category=fast-foods";
             String barcode = sp.getString("barcode", "not_exists");
             String url = baseUrl+barcode+footerUrl;

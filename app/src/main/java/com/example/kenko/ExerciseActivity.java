@@ -135,7 +135,7 @@ public class ExerciseActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization"," ") // Deleted API key
                 .post(body)
                 .build();
 
