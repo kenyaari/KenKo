@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KenKo</string>
+
+    <string name="save_button">Save</string>
+    <string name="restart_button">Restart</string>
+    <string name="built_in">Built-in Step Counter:</string>
+    <string name="total">Total Steps:</string>
+    <string name="sph">Steps/Hour:</string>
+    <string name="goals_completed">Goals Completed:</string>
+    <string name="initial_number">0</string>
+    <string name="notification">Notified!</string>
+    <string name="saved">Saved!</string>
+    <string name="restarted">Restarted!</string>
+    <string name="error_blank">Please enter a number.</string>
+    <string name="debug">Error found.</string>
+
+    <string name="grams">Error found.</string>
+    <string name="hintFood">Enter food here</string>
+    <string name="hintQty">Qty</string>
+</resources>

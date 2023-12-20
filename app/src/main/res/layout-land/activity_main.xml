@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#061148"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nutritionFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="60dp"
+            android:contentDescription=" "
+            app:tint="#061148"
+            app:backgroundTint="#FFFFFF"
+            app:srcCompat="@drawable/nutrition_toggled" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/exerciseFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"
+            android:contentDescription=" "
+            app:tint="#FFFFFF"
+            app:backgroundTint="#061148"
+            app:srcCompat="@drawable/exercise_untoggled" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:contentDescription=" "
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#061148"
+        app:backgroundTint="#87CEEB"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ring_fiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="101dp"
+        android:foregroundGravity="center_horizontal"
+        app:indicatorColor="@color/caramel"
+        app:indicatorSize="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/grey"
+        app:trackThickness="15dp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ring_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="86dp"
+        android:foregroundGravity="center_horizontal"
+        app:indicatorColor="@color/red"
+        app:indicatorSize="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/grey"
+        app:trackThickness="17dp" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ring_carb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="71dp"
+        android:foregroundGravity="center_horizontal"
+        app:indicatorColor="@color/burgundy"
+        app:indicatorSize="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/grey"
+        app:trackThickness="15dp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ring_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="56dp"
+        android:foregroundGravity="center_horizontal"
+        app:indicatorColor="@color/purple"
+        app:indicatorSize="210dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/grey"
+        app:trackThickness="15dp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ring_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="41dp"
+        android:foregroundGravity="center_horizontal"
+        app:indicatorColor="@color/blue"
+        app:indicatorSize="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/grey"
+        app:trackThickness="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
